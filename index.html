@@ -1,28 +1,130 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <title>OzG 的 GitHub Page</title>
     <style>
-        .box{
-            background-color:antiquewhite;
-        } 
-        #myP{
-            color: coral;
-            font-size: 22px
+        body {
+            margin: 0;
+            padding: 0;
         }
+
+        #divBar {
+            height: 50px;
+            background-color: #e0e0e0;
+            border-bottom: 1px #c0c0c0 solid;
+        }
+
+        .divLogo {
+            margin-left: 30px;
+            margin-right: 10px;
+            margin-top: 5px;
+            float: left;
+/*            display: inline-block;*/
+/*            background-color: beige;*/
+        }
+
+        .imgLogo {
+            height: 40px;
+            display: inline-block;
+        }
+
+        .divTitle {
+            height: 50px;
+            display: inline-block;
+            color: #606060;
+            text-align: center;
+            line-height: 50px;
+/*
+            background-color: antiquewhite;
+            border: 1px red solid;
+*/
+
+        }
+
+        .titleTxt {
+            font-size: 22px;
+        }
+
+        .divTitleBtn {
+            height: 50px;
+            display: inline-block;
+/*            background-color: antiquewhite;*/
+        }
+
+        a {
+            text-decoration-line: none;
+            color: #505050;
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .downArrow {
+            width: 20px;
+        }
+
+        /*
+
+        ul li {
+            list-style: none
+        }
+
+        a:hover>div>ul {
+            display: contents
+        }
+
+        div[class=pageTypeDiv] {
+            width: 100px;
+            margin-left: 200px;
+            background-color: #EEE;
+        }
+
+        .pageType {
+            display: none;
+        }
+*/
     </style>
 </head>
+
 <body>
-   <div class="box">
-     <br>
-      <p id="myP">Learn One Hour a Day Changed My Life.</p> 
-      <ul>
-          <li>猜</li>
-          <li>情</li>
-          <li>寻</li>
-      </ul>
-      <br>
-   </div>
-</body>
-</html>
+    <div id="mainPage">
+        <div id="divBar">
+            <div class="divLogo">
+                <img src="./img/light_on.png" alt="" class="imgLogo">
+            </div>
+
+            <div class="divTitle">
+                <span class="titleTxt">OzzzG ·</span>
+                <div class="divTitleBtn">
+                    <a href="#" class="titleBtn">个人展示</a>
+                </div>
+                <img src="./img/arrow-down.png" alt="" class="downArrow">
+            </div>
+            <!--
+            <span id="pageName" class="txt">OzG 的 GitHub Page · </span>
+            <a href="#" id="pageTypeList">展示平台<img src="./img/arrow-down.png" alt="" id="downArrow">
+                <div class="pageTypeDiv">
+                    <ul class=pageType>
+                        <li class="pageLi">1</li>
+                        <li class="pageLi">2</li>
+                        <li class="pageLi">3</li>
+                        <li class="pageLi">4</li>
+                        <li class="pageLi">5</li>
+                    </ul>
+                </div>
+            </a>
+-->
+
+        </div>
+        <div id="tag">
+
+        </div>
+        <div id="leftList">
+
+        </div>
+        <div id="pageView">
+
+        </div>
+    </div>
+</body></html>
