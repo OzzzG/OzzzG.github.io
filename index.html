@@ -10,10 +10,17 @@
             padding: 0;
         }
 
-        #divBar {
+        .divBar {
             height: 50px;
             background-color: #e0e0e0;
             border-bottom: 1px #c0c0c0 solid;
+        }
+
+        .divBar::before,
+        .divBar:after {
+            content: "";
+            display: table;
+            clear: both;
         }
 
         .divLogo {
@@ -21,8 +28,6 @@
             margin-right: 10px;
             margin-top: 5px;
             float: left;
-/*            display: inline-block;*/
-/*            background-color: beige;*/
         }
 
         .imgLogo {
@@ -32,25 +37,26 @@
 
         .divTitle {
             height: 50px;
-            display: inline-block;
             color: #606060;
             text-align: center;
             line-height: 50px;
-/*
-            background-color: antiquewhite;
-            border: 1px red solid;
-*/
-
+            float: left;
         }
 
         .titleTxt {
+            margin-right: 10px;
             font-size: 22px;
+            display: inline-block;
+            float: left;
+            user-select: none;
         }
 
         .divTitleBtn {
-            height: 50px;
             display: inline-block;
-/*            background-color: antiquewhite;*/
+        }
+
+        .divTitleBtn:hover ul {
+            display: block;
         }
 
         a {
@@ -60,63 +66,78 @@
             display: inline-block;
         }
 
-        .downArrow {
-            width: 20px;
-        }
-
-        /*
-
-        ul li {
-            list-style: none
-        }
-
-        a:hover>div>ul {
-            display: contents
-        }
-
-        div[class=pageTypeDiv] {
-            width: 100px;
-            margin-left: 200px;
-            background-color: #EEE;
-        }
-
-        .pageType {
+        ul {
             display: none;
+            background-color: #fff;
+            list-style: none;
+            text-align: center;
+            margin-top: -10px;
+            border-radius: 3px;
+            box-shadow: 1px 1px 3px;
         }
-*/
+
+
+        li {
+            display: block;
+            height: 50px;
+            margin-left: -32px;
+            padding-right: 8px;
+            line-height: 50px;
+        }
+        
+        li a{
+            font-size: 14px;
+            width:63px;
+        }
+        
+        li a:hover{
+            color: cornflowerblue;
+        }
+
+
+        .downArrow {
+            height: 50px;
+            float: left;
+        }
+
+        .arrow1 {
+            display: block;
+            width: 20px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 
 <body>
     <div id="mainPage">
-        <div id="divBar">
+        <div class="divBar">
             <div class="divLogo">
                 <img src="./img/light_on.png" alt="" class="imgLogo">
             </div>
 
+
             <div class="divTitle">
                 <span class="titleTxt">OzzzG ·</span>
                 <div class="divTitleBtn">
-                    <a href="#" class="titleBtn">个人展示</a>
-                </div>
-                <img src="./img/arrow-down.png" alt="" class="downArrow">
-            </div>
-            <!--
-            <span id="pageName" class="txt">OzG 的 GitHub Page · </span>
-            <a href="#" id="pageTypeList">展示平台<img src="./img/arrow-down.png" alt="" id="downArrow">
-                <div class="pageTypeDiv">
-                    <ul class=pageType>
-                        <li class="pageLi">1</li>
-                        <li class="pageLi">2</li>
-                        <li class="pageLi">3</li>
-                        <li class="pageLi">4</li>
-                        <li class="pageLi">5</li>
+                    <a href="#" class="titleBtn"> 个人展示 </a>
+                    <ul class="pageType">
+                        <li><a href="page_xcx.html" class="pageLiA">小程序</a></li>
+                        <li><a href="page_xyx.html" class="pageLiA">小游戏</a></li>
+                        <li><a href="page_xsd.html" class="pageLiA">小商店</a></li>
+                        <li><a href="page_gzh.html" class="pageLiA">公众号</a></li>
+                        <li><a href="page_kfpt.html" class="pageLiA">开放平台</a></li>
                     </ul>
                 </div>
-            </a>
--->
-
+            </div>
+            <div class="downArrow">
+                <img src="./img/arrow-down.png" alt="" class="arrow1">
+            </div>
         </div>
+
+
+
+
+
         <div id="tag">
 
         </div>
